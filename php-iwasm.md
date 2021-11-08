@@ -21,3 +21,6 @@ Wordpress를 포함하여 절대 다수의 PHP 프로젝트가 공유 리눅스 
   * 사례: https://github.com/gnh1201/reasonableframework/blob/master/helper/exectool.php
 
 wasm으로 컴파일된 파일은 PHP 말고도 다른 플랫폼 기반의 프로젝트에서도 사용할 수 있다.
+
+## 향후 계획
+위 작업을 종합적으로 리뷰해보았을 때 WASM으로 워드프레스 플러그인을 개발하는 것을 실증할 수 있지 않을까 한다.
