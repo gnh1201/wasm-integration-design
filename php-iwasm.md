@@ -1,4 +1,4 @@
-Note: This document is written in Korean.
+Note: This document is written in Korean. If anyone has any questions, please email support@exts.kr
 
 ## 문제 정의
 이전 작업에서 PHP 4 세대(CGI-style)과 PHP 7 세대(OOP-style) 사이의 코딩 컨벤션(관습) 차이를 해소하기 위해 [ReasonableFramework](https://github.com/gnh1201/reasonableframework)를 출시하였다. 이것은 어중간한 세대를 구현하기 때문에 학문적 관점에선 비판받을 수 있으나 산업적 관점에서는 매우 다양한 실용적 효과를 보았다.
