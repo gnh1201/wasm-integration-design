@@ -1,3 +1,3 @@
 # wasm-integration-design
 
-Design an integration plan between the web assembly and other platforms.
+Design an integration plan between WebAssembly(WASM) and other platforms.
