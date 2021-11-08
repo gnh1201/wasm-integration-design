@@ -12,13 +12,15 @@ PHP에서 WASM을 사용하는 공식적인 방법으로는 [wasmerio/wasmer-php
 
 Wordpress를 포함하여 절대 다수의 PHP 프로젝트가 공유 리눅스 환경에서 돌아가므로 실제로 많은 것이 제한되어 있다. 실례로, 한국 기준으로 어느 웹 호스팅사는 PHP 외 다른 프로세스로 부터 일어나는 스레드 분기(Thread Fork)에 제한을 두고 있어 WASM 가상머신의 JIT(Just-In-Time) 컴파일러를 구현할 수 없었다.
 
-  * 사례: https://github.com/bytecodealliance/wasm-micro-runtime/issues/802
+  * https://github.com/bytecodealliance/wasm-micro-runtime/issues/802
 
 이러한 제한된 리눅스에 어느정도 자유도를 부여하는 방법으로 잘 알려진 프로젝트로는 [BusyBox](https://busybox.net/)가 있으며, 이와 비슷하게 사용할 수 있는 가장 적합한 WASM 가상머신으로는 [iwasm](https://github.com/bytecodealliance/wasm-micro-runtime)이 있다. 가상머신 및 WASM 빌드 방법은 아래 링크에 소개되어 있다.
 
+  * https://gist.github.com/gnh1201/b9c4ee4a98fbb369237b3e447a9550a2
+
 타겟 웹 호스팅에 맞게 정상적으로 iwasm을 컴파일했다면, PHP에서 쉘 명령을 허용하는 함수(exec, exec_shell 등)을 이용하여 WASM으로 작성된 함수를 호출할 수 있다.
 
-  * 사례: https://github.com/gnh1201/reasonableframework/blob/master/helper/exectool.php
+  * https://github.com/gnh1201/reasonableframework/blob/master/helper/exectool.php
 
 wasm으로 컴파일된 파일은 PHP 말고도 다른 플랫폼 기반의 프로젝트에서도 사용할 수 있다.
 
