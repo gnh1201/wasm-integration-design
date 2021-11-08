@@ -10,7 +10,7 @@ Note: This document is written in Korean.
 ## 제안 방법
 PHP에서 WASM을 사용하는 공식적인 방법으로는 [wasmerio/wasmer-php](https://github.com/wasmerio/wasmer-php)가 있지만 모듈 컴파일과 `phpize`를 요구하기 때문에 공유 리눅스(Shared Linux)에서 사용할 수 없다.
 
-Wordpress를 포함하여 절대 다수의 PHP 프로젝트가 공유 리눅스 환경에서 돌아가므로 많은 것들이 제한되어 있을 수 있다. 실례로, 한국 기준으로 어느 웹 호스팅사는 PHP 외 다른 프로세스로 부터 일어나는 스레드 분기(Thread Fork)에 제한을 두고 있어 WASM 컴파일러의 JIT(Just-In-Time)를 구현할 수 없었다.
+Wordpress를 포함하여 절대 다수의 PHP 프로젝트가 공유 리눅스 환경에서 돌아가므로 실제로 많은 것이 제한되어 있다. 실례로, 한국 기준으로 어느 웹 호스팅사는 PHP 외 다른 프로세스로 부터 일어나는 스레드 분기(Thread Fork)에 제한을 두고 있어 WASM 컴파일러의 JIT(Just-In-Time)를 구현할 수 없었다.
 
   * 사례: https://github.com/bytecodealliance/wasm-micro-runtime/issues/802
 
