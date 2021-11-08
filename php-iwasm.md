@@ -19,3 +19,5 @@ Wordpress를 포함하여 절대 다수의 PHP 프로젝트가 공유 리눅스 
   * 사례: https://github.com/gnh1201/reasonableframework/blob/master/helper/exectool.php
 
 타겟 웹 호스팅에 맞게 정상적으로 iwasm을 컴파일했다면, PHP에서 쉘 명령을 허용하는 함수(exec, exec_shell 등)을 이용하여 WASM으로 작성된 함수를 호출할 수 있다.
+
+wasm으로 컴파일된 파일은 PHP 말고도 다른 플랫폼 기반의 프로젝트에서도 사용할 수 있다.
