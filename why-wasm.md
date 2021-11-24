@@ -20,3 +20,8 @@ WASM의 강력한 장점은 웹 기술과 그 노하우를 다른 플랫폼에 �
 제가 WASM에 관심을 가지는 이유는 결국 '레거시'와의 전쟁을 종결하기 위함입니다. 최신 연구가 발표될 때마다 기존 시스템을 뜯어고치는 것은 현실적으로 불가능합니다.
 
 전체를 바꿀 수 없다면 새로운 변화를 내장(Embedded)할 수는 있습니다. 그리고 점점 확산하여 전체에 변화를 일으킬 수 있습니다. 저는 WASM이 제가 그동안 겪어왔던 레거시 문제를 해결하는데 분명 핵심적인 역할을 하리라 믿습니다.
+
+## 향후 로드맵
+  * [PHP에서 활용](https://github.com/gnh1201/wasm-integration-design/blob/main/php-iwasm.md)
+  * [VBA에서 활용](https://github.com/gnh1201/wasm-integration-design/blob/main/vba-wasmer.md)
+  * IoT에서 활용
